@@ -1,0 +1,91 @@
+/* Bố cục poster (trái) và thông tin (phải) */
+.detail-header {
+    display: flex;       /* Kích hoạt Flexbox */
+    gap: 20px;           /* Khoảng cách giữa poster và thông tin */
+    align-items: flex-start; /* Canh đầu */
+    margin: 20px;        /* Tạo khoảng cách cho toàn khối */
+  }
+  
+  /* Poster bên trái */
+  .detail-poster {
+    width: 220px;        /* Chiều rộng poster tùy chỉnh */
+    height: 330px;       /* Chiều cao poster tùy chỉnh */
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Thông tin bên phải */
+  .detail-info {
+    flex: 1;             /* Chiếm phần còn lại */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;           /* Khoảng cách giữa các dòng */
+  }
+  .detail-info h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  .detail-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+  }
+  /* Nút bên dưới thông tin */
+  .detail-buttons {
+    margin-top: 10px;
+  }
+  .detail-buttons button {
+    background-color: #f06000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+  }
+  .detail-buttons button:hover {
+    background-color: #ff884d;
+  }
+ .detail-content {
+    margin-left: 20px;
+ }  
+
+ /* Style cho khối Trailer */
+.detail-trailer {
+    margin-top: 20px;
+  }
+  
+  .detail-trailer h2 {
+    font-size: 18px;
+    color: #f06000;
+    margin-bottom: 10px;
+  }
+  
+  .detail-trailer iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-datve {
+    background-color: #f06000; /* Màu cam */
+    color: #fff;               /* Chữ màu trắng */
+    padding: 8px 15px;         /* Khoảng cách bên trong nút */
+    border-radius: 4px;        /* Bo góc nhẹ */
+    text-decoration: none;     /* Xóa gạch chân */
+    font-size: 14px;           /* Kích thước chữ */
+    transition: background 0.3s;
+    display: inline-block;     /* Để áp dụng được padding và kích thước */
+  }
+  
+  .btn-datve:hover {
+    background-color: #ff884d; /* Màu cam sáng hơn khi hover */
+  }
+  

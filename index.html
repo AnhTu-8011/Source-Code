@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="assets/images/logo.png">
+        </div>
+        <nav class="nav-center">
+            <a href="lich-chieu.html">Lịch Chiếu</a>
+            <a href="#">Phim</a>
+            <a href="#">Ưu Đãi</a>
+            <a href="#">Tin Tức</a>
+            <a href="#">Thành Viên</a>
+          </nav>
+        <nav class="nav-right">
+            <a href="#" id="loginBtn">Đăng Nhập</a><br>
+            <a href="#" id="registerBtn">Đăng Ký</a>
+        </nav>
+      </header>
+      <!-- Modal Đăng Nhập -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-container">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Đăng Nhập</h2>
+      <form>
+        <div>
+          <label for="username">Tài khoản:</label>
+          <input type="text" id="username" name="username" placeholder="Nhập tài khoản">
+        </div>
+        <div>
+          <label for="password">Mật khẩu:</label>
+          <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+          <!-- Nút bật/tắt xem mật khẩu cho đăng nhập với id riêng -->
+          <button type="button" class="toggle-password" id="togglePasswordLogin">Hiện mật khẩu</button>
+        </div>
+        <button type="submit">Đăng Nhập</button>
+      </form>
+    </div>
+  </div>
+
+   <!-- Modal Đăng Ký -->
+   <div class="modal" id="registerModal">
+    <div class="modal-container">
+      <span class="close-btn" id="closeRegister">&times;</span>
+      <h2>Đăng Ký</h2>
+      <form>
+        <div>
+          <label for="regUsername">Tài khoản:</label>
+          <input type="text" id="regUsername" name="regUsername" placeholder="Nhập tài khoản">
+        </div>
+        <div>
+          <label for="regEmail">Email:</label>
+          <input type="email" id="regEmail" name="regEmail" placeholder="Nhập email">
+        </div>
+        <div>
+          <label for="regPassword">Mật khẩu:</label>
+          <input type="password" id="regPassword" name="regPassword" placeholder="Nhập mật khẩu">
+          <!-- Nút bật/tắt xem mật khẩu cho đăng ký với id riêng -->
+          <button type="button" class="toggle-password" id="togglePasswordRegister">Hiện mật khẩu</button>
+        </div>
+        <button type="submit">Đăng Ký</button>
+      </form>
+    </div>
+  </div>
+
+
+<!-- Slider -->
+<div class="slider">
+    <div class="slides">
+        <img src="assets/images/1.jpg" alt="Image 1">
+    </div>
+    <div class="slides">
+        <img src="assets/images/2.jpg" alt="Image 2">
+    </div>
+    <div class="slides">
+        <img src="assets/images/3.jpg" alt="Image 3">
+    </div>
+    <div class="slides">
+        <img src="assets/images/4.jpg" alt="Image 4">
+    </div>
+    <div class="slides">
+        <img src="assets/images/5.jpg" alt="Image 5">
+    </div>
+    <div class="slides">
+        <img src="assets/images/6.jpg" alt="Image 6">
+    </div>
+    <!-- Nút chuyển ảnh -->
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  </div>
+<!-- khối phim -->
+  <section class="movie-section">
+    <!-- Tabs -->
+    <div class="movie-tabs">
+      <button class="active">PHIM ĐANG CHIẾU</button>
+      <!-- <button>PHIM SẮP CHIẾU</button> -->
+    </div>
+    <!-- Nút mũi tên trái -->
+    <button class="arrow-btn left" id="leftBtn">&#10094;</button>
+    <!-- Hàng ngang các poster phim -->
+    <div class="movie-row">
+      <!-- 1. Poster phim -->
+      <div class="movie-item" >
+        <a href="thong-tin-phim.html">
+            <img src="assets/images/1.jpg" alt="Poster 1">
+        </a>
+        <h3>NỮ TƯ BÓNG TỐI (T16)</h3>
+        <p>114 PHÚT | C16</p>
+      </div>
+      <!-- 2. Poster phim -->
+      <div class="movie-item">
+        <img src="assets/images/2.jpg" alt="Poster 2">
+        <h3>CAPTAIN AMERICA: THẾ GIỚI MỚI</h3>
+        <p>120 PHÚT | C13</p>
+      </div>
+      <!-- 3. Poster phim -->
+      <div class="movie-item">
+        <img src="assets/images/3.jpg" alt="Poster 3">
+        <h3>KẺ ĐỒNG HÀNH (T18)</h3>
+        <p>97 PHÚT | T18</p>
+      </div>
+      <!-- 4. Poster phim -->
+      <div class="movie-item">
+        <img src="assets/images/4.jpg" alt="Poster 4">
+        <h3>RIDER: GIAO HÀNG CHO ...</h3>
+        <p>120 PHÚT | C16</p>
+      </div>
+      <!-- ... Thêm các poster khác tuỳ ý ... -->
+      <div class="movie-item">
+        <img src="assets/images/5.jpg" alt="Poster 5">
+        <h3>RIDER: GIAO HÀNG CHO ...</h3>
+        <p>120 PHÚT | C16</p>
+      </div>
+      <div class="movie-item">
+        <img src="assets/images/6.jpg" alt="Poster 6">
+        <h3>RIDER: GIAO HÀNG CHO ...</h3>
+        <p>120 PHÚT | C16</p>
+      </div>
+      <!-- Nút mũi tên phải -->
+      <button class="arrow-btn right" id="rightBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Phần Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Thông tin liên hệ -->
+      <div class="footer-contact">
+        <h3>Thông tin liên hệ</h3>
+        <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận XYZ, TP. HCM</p>
+        <p><strong>Điện thoại:</strong> 0123 456 789</p>
+        <p><strong>Email:</strong> support@example.com</p>
+      </div>
+      <!-- Bản đồ (Google Maps) -->
+      <div class="footer-map">
+        <h3>Bản đồ</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.823444389731!2d106.6781404153342!3d10.76262239233025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee24a12d4f9%3A0x6c2d2c62f8c5a6b9!2zVHLGsOG7nW5nIMSQw7RuZyBuZ2jhu4cgTmluaCBIw7RuZyBIb8Og!5e0!3m2!1svi!2s!4v1625077633673!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- Phương thức thanh toán -->
+      <div class="footer-payment">
+        <h3>Phương thức thanh toán</h3>
+        <a href="#"><img src="assets/images/payment-visa.png" alt="Visa"></a>
+        <a href="#"><img src="assets/images/payment-mastercard.png" alt="Mastercard"></a>
+        <a href="#"><img src="assets/images/payment-paypal.png" alt="PayPal"></a>
+      </div>
+      <!-- Phương thức đăng nhập -->
+      <div class="footer-login">
+        <h3>Phương thức đăng nhập</h3>
+        <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/google.png" alt="Google"></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Công ty của bạn. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

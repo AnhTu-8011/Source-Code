@@ -1,0 +1,102 @@
+    /* ----------- RESET & BASE ----------- */
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        color: #333;
+      }
+      .container-lich-chieu {
+        padding: 20px;
+      }
+      h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #f06000; /* Màu cam, tuỳ ý */
+
+      }
+      /* Hiển thị tháng bên dưới */
+    .schedule-month {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 15px;
+      }
+      /* ----------- CHỌN NGÀY CHIẾU ----------- */
+      .date-picker {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .date-item {
+        background-color: #f3f3f3;
+        border-radius: 4px;
+        width: 60px;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+      }
+      .date-item.active {
+        background-color: #f06000; /* Màu cam */
+        color: #fff;
+      }
+      .date-item:hover {
+        background-color: #e2e2e2;
+      }
+      /* ----------- CHỌN LỊCH CHIẾU ----------- */
+      .schedule-container {
+        margin-top: 20px;
+      }
+      .movie-block {
+        display: flex;
+        gap: 15px;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+        align-items: flex-start;
+      }
+      .movie-block:last-child {
+        border-bottom: none;
+      }
+      /* Ảnh poster (nếu có) */
+      .movie-poster img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      /* Thông tin phim và suất chiếu */
+      .movie-info {
+        flex: 1;
+      }
+      .movie-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #333;
+      }
+      .movie-sessions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .session {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 8px 10px;
+        min-width: 100px;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .session:hover {
+        background-color: #eee;
+      }
+      .room {
+        display: block;
+        font-size: 12px;
+        color: #999;
+        margin-top: 2px;
+      }
