@@ -2,13 +2,12 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Nhà Gia Tiến (T18)</title>
+  <title>Phim Đang Chiếu</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/thong-tin-phim.css">
-
+  <link rel="stylesheet" href="assets/css/phim.css">
 </head>
 <body>
-  <!-- Header chung -->
+  <!-- Header -->
   <header>
     <div class="logo">
       <a href="index.html">
@@ -23,50 +22,51 @@
       <a href="#">Thành Viên</a>
     </nav>
     <nav class="nav-right">
-      <a href="#" id="loginBtn">Đăng Nhập</a>
-      <a href="#" id="registerBtn">Đăng Ký</a>
+      <a href="#">Đăng Nhập</a>
+      <a href="#">Đăng Ký</a>
     </nav>
   </header>
 
-  <!-- Thông tin chi tiết phim -->
-  <main class="movie-detail">
-    <div class="detail-header">
-      <img src="assets/images/1.jpg" alt="Poster Nhà Gia Tiến (T18)" class="detail-poster">
-      <div class="detail-info">
-        <h1>NHÀ GIA TIẾN (T18)</h1>
-        <p><strong>Diễn viên:</strong> Huỳnh Lập, Phương Mỹ Chi, ...</p>
-        <p><strong>Đạo diễn:</strong> Huỳnh Lập</p>
-        <p><strong>Thể loại:</strong> Hài, Tình cảm</p>
-        <p><strong>Khởi chiếu:</strong> 20-02-2025</p>
-        <p><strong>Độ dài:</strong> 120 phút</p>
-        <p><strong>Rated:</strong> C18 (Phim cấm phổ biến đến khán giả dưới 18 tuổi)</p>
-        
-        <div class="detail-buttons">
-            <a class="btn-datve" href="lich-chieu.html">Đặt Vé</a>
-            <button class="btn-nav" id="trailerBtn">Trailer</button>
-        </div>
-        </div>
+  <!-- Danh sách phim -->
+  <div class="movies-container">
+    <h2>PHIM ĐANG CHIẾU</h2>
+    <div class="movie-list">
+      <!-- Phim 1 -->
+      <div class="movie-item">
+        <img src="assets/images/1.jpg" alt="Nhà Gia Tiến (T18)">
+        <span class="badge">C18</span>
+        <h3>Nhà Gia Tiến (T18)</h3>
+        <p>Hài, Tình Cảm<br>120 phút</p>
+        <button class="btn-datve" onclick="window.location.href='lich-chieu.html'">Đặt Vé</button>
+      </div>
+      <!-- Phim 2 -->
+      <div class="movie-item">
+        <img src="assets/images/2.jpg" alt="Nữ Tư Bóng Tối (T16)">
+        <span class="badge">C16</span>
+        <h3>Nữ Tư Bóng Tối (T16)</h3>
+        <p>Kinh Dị<br>114 phút</p>
+        <button class="btn-datve" onclick="window.location.href='lich-chieu.html'">Đặt Vé</button>
+      </div>
+      <!-- Phim 3 -->
+      <div class="movie-item">
+        <img src="assets/images/3.jpg" alt="Đền An Hồn (T18)">
+        <span class="badge">C18</span>
+        <h3>Đền An Hồn (T18)</h3>
+        <p>Kinh Dị<br>110 phút</p>
+        <button class="btn-datve" onclick="window.location.href='lich-chieu.html'">Đặt Vé</button>
+      </div>
+      <!-- Phim 4 -->
+      <div class="movie-item">
+        <img src="assets/images/4.jpg" alt="Bộ Tứ Báo Thù (T16)">
+        <span class="badge">C16</span>
+        <h3>Bộ Tứ Báo Thù (T16)</h3>
+        <p>Hành Động<br>130 phút</p>
+        <button class="btn-datve" onclick="window.location.href='lich-chieu.html'">Đặt Vé</button>
+      </div>
+      <!-- ... Thêm các phim khác nếu cần ... -->
     </div>
-
-
-    <div class="detail-content" id="movieContent">
-      <h2>Nội dung phim</h2>
-      <p>
-        “Nhà Gia Tiến” xoay quanh câu chuyện về ... (mô tả cốt truyện phim, bối cảnh, nhân vật, tình tiết, v.v.)
-      </p>
-    </div>
-
-      <!-- Khối Trailer (ẩn mặc định) -->
-  <div class="detail-trailer" id="trailerContent" style="display: none;">
-    <!-- <h2>Trailer</h2> -->
-    <!-- Thay VIDEO_ID bằng mã video YouTube của phim -->
-    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BBqfUi_tSNA" title="Trailer" frameborder="0" allowfullscreen></iframe>
-    <!-- Nút quay lại nội dung phim nếu cần -->
-    <button id="backToContent" style="margin-top: 10px; margin-left: 10px; margin-bottom: 10px; padding: 8px 12px; background: #f06000; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Quay lại</button>
   </div>
-
-  </main>
-
+  
   <!-- Footer -->
   <footer>
     <div class="footer-container">
@@ -101,7 +101,5 @@
       <p>&copy; 2025 Công ty của bạn. All rights reserved.</p>
     </div>
   </footer>
-  <script src="assets/js/thong-tin-phim.js"></script>
-
 </body>
 </html>

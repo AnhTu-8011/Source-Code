@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chọn Ghế</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/chon-ghe.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="nav-center">
+          <a href="lich-chieu.html">Lịch Chiếu</a>
+          <a href="phim.html">Phim</a>
+          <a href="#">Ưu Đãi</a>
+          <a href="#">Tin Tức</a>
+          <a href="#">Thành Viên</a>
+          </nav>
+        <nav class="nav-right">
+            <a href="#" id="loginBtn">Đăng Nhập</a><br>
+            <a href="#" id="registerBtn">Đăng Ký</a>
+        </nav>
+      </header>
+      <h1>Đặt vé - Chọn ghế</h1>
+      <div class="booking-container">
+        <!-- Sơ đồ ghế bên trái -->
+        <div class="seat-map-container">
+          <div class="screen">MÀN HÌNH</div>
+          <!-- Bảng ghế -->
+          <table class="seat-map" id="seatMap">
+            <thead>
+              <tr>
+                <th></th> <!-- ô trống góc trên trái -->
+                <!-- Cột 1 -> 10 -->
+                <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                <th>11</th><th>12</th><th>13</th><th>14</th><th>15</th>
+                <th>16</th><th>17</th><th>18</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Hàng A -->
+              <tr>
+                <th>A</th>
+                <td class="available" data-seat="A1">A1</td>
+                <td class="available" data-seat="A2">A2</td>
+                <td class="available" data-seat="A3">A3</td>
+                <td class="available" data-seat="A4">A4</td>
+                <td class="available" data-seat="A5">A5</td>
+                <td class="available" data-seat="A6">A6</td>
+                <td class="available" data-seat="A7">A7</td>
+                <td class="available" data-seat="A8">A8</td>
+                <td class="available" data-seat="A9">A9</td>
+                <td class="available" data-seat="A10">A10</td>
+                <td class="available" data-seat="A11">A11</td>
+                <td class="available" data-seat="A12">A12</td>
+                <td class="available" data-seat="A13">A13</td>
+                <td class="available" data-seat="A14">A14</td>
+                <td class="available" data-seat="A15">A15</td>
+                <td class="available" data-seat="A16">A16</td>
+                <td class="available" data-seat="A17">A17</td>
+                <td class="available" data-seat="A18">A18</td>
+              </tr>
+              <!-- Hàng B -->
+              <tr>
+                <th>B</th>
+                <td class="available" data-seat="B1">B1</td>
+                <td class="available" data-seat="B2">B2</td>
+                <td class="available" data-seat="B3">B3</td>
+                <td class="available" data-seat="B4">B4</td>
+                <td class="available" data-seat="B5">B5</td>
+                <td class="available" data-seat="B6">B6</td>
+                <td class="available" data-seat="B7">B7</td>
+                <td class="available" data-seat="B8">B8</td>
+                <td class="available" data-seat="B9">B9</td>
+                <td class="available" data-seat="B10">B10</td>
+                <td class="available" data-seat="B11">B11</td>
+                <td class="available" data-seat="B12">B12</td>
+                <td class="available" data-seat="B13">B13</td>
+                <td class="available" data-seat="B14">B14</td>
+                <td class="available" data-seat="B15">B15</td>
+                <td class="available" data-seat="B16">B16</td>
+                <td class="available" data-seat="B17">B17</td>
+                <td class="available" data-seat="B18">B18</td>
+              </tr>
+              <!-- ... Thêm các hàng C, D, E, F, G... tuỳ ý ... -->
+              <tr>
+                <th>C</th>
+                <td class="available" data-seat="C1">C1</td>
+                <td class="available" data-seat="C2">C2</td>
+                <td class="available" data-seat="C3">C3</td>
+                <td class="available" data-seat="C4">C4</td>
+                <td class="available" data-seat="C5">C5</td>
+                <td class="available" data-seat="C6">C6</td>
+                <td class="available" data-seat="C7">C7</td>
+                <td class="available" data-seat="C8">C8</td>
+                <td class="available" data-seat="C9">C9</td>
+                <td class="available" data-seat="C10">C10</td>
+                <td class="available" data-seat="C11">C11</td>
+                <td class="available" data-seat="C12">C12</td>
+                <td class="available" data-seat="C13">C13</td>
+                <td class="available" data-seat="C14">C14</td>
+                <td class="available" data-seat="C15">C15</td>
+                <td class="available" data-seat="C16">C16</td>
+                <td class="available" data-seat="C17">C17</td>
+                <td class="available" data-seat="C18">C18</td>
+              </tr>
+              <tr>
+                <th>D</th>
+                <td class="available" data-seat="D1">D1</td>
+                <td class="available" data-seat="D2">D2</td>
+                <td class="available" data-seat="D3">D3</td>
+                <td class="available" data-seat="D4">D4</td>
+                <td class="available" data-seat="D5">D5</td>
+                <td class="available" data-seat="D6">D6</td>
+                <td class="available" data-seat="D7">D7</td>
+                <td class="available" data-seat="D8">D8</td>
+                <td class="available" data-seat="D9">D9</td>
+                <td class="available" data-seat="D10">D10</td>
+                <td class="available" data-seat="D11">D11</td>
+                <td class="available" data-seat="D12">D12</td>
+                <td class="available" data-seat="D13">D13</td>
+                <td class="available" data-seat="D14">D14</td>
+                <td class="available" data-seat="D15">D15</td>
+                <td class="available" data-seat="D16">D16</td>
+                <td class="available" data-seat="D17">D17</td>
+                <td class="available" data-seat="D18">D18</td>
+              </tr>
+            <!-- Hàng D -->
+            <tr>
+            <th>D</th>
+            <td class="available" data-seat="D1">D1</td>
+            <td class="available" data-seat="D2">D2</td>
+            <td class="available" data-seat="D3">D3</td>
+            <td class="available" data-seat="D4">D4</td>
+            <td class="available" data-seat="D5">D5</td>
+            <td class="available" data-seat="D6">D6</td>
+            <td class="available" data-seat="D7">D7</td>
+            <td class="available" data-seat="D8">D8</td>
+            <td class="available" data-seat="D9">D9</td>
+            <td class="available" data-seat="D10">D10</td>
+            <td class="available" data-seat="D11">D11</td>
+            <td class="available" data-seat="D12">D12</td>
+            <td class="available" data-seat="D13">D13</td>
+            <td class="available" data-seat="D14">D14</td>
+            <td class="available" data-seat="D15">D15</td>
+            <td class="available" data-seat="D16">D16</td>
+            <td class="available" data-seat="D17">D17</td>
+            <td class="available" data-seat="D18">D18</td>
+            </tr>
+
+            <!-- Hàng E -->
+            <tr>
+            <th>E</th>
+            <td class="available" data-seat="E1">E1</td>
+            <td class="available" data-seat="E2">E2</td>
+            <td class="available" data-seat="E3">E3</td>
+            <td class="available" data-seat="E4">E4</td>
+            <td class="available" data-seat="E5">E5</td>
+            <td class="available" data-seat="E6">E6</td>
+            <td class="available" data-seat="E7">E7</td>
+            <td class="available" data-seat="E8">E8</td>
+            <td class="available" data-seat="E9">E9</td>
+            <td class="available" data-seat="E10">E10</td>
+            <td class="available" data-seat="E11">E11</td>
+            <td class="available" data-seat="E12">E12</td>
+            <td class="available" data-seat="E13">E13</td>
+            <td class="available" data-seat="E14">E14</td>
+            <td class="available" data-seat="E15">E15</td>
+            <td class="available" data-seat="E16">E16</td>
+            <td class="available" data-seat="E17">E17</td>
+            <td class="available" data-seat="E18">E18</td>
+            </tr>
+
+            <!-- Hàng F -->
+            <tr>
+            <th>F</th>
+            <td class="available" data-seat="F1">F1</td>
+            <td class="available" data-seat="F2">F2</td>
+            <td class="available" data-seat="F3">F3</td>
+            <td class="available" data-seat="F4">F4</td>
+            <td class="available" data-seat="F5">F5</td>
+            <td class="available" data-seat="F6">F6</td>
+            <td class="available" data-seat="F7">F7</td>
+            <td class="available" data-seat="F8">F8</td>
+            <td class="available" data-seat="F9">F9</td>
+            <td class="available" data-seat="F10">F10</td>
+            <td class="available" data-seat="F11">F11</td>
+            <td class="available" data-seat="F12">F12</td>
+            <td class="available" data-seat="F13">F13</td>
+            <td class="available" data-seat="F14">F14</td>
+            <td class="available" data-seat="F15">F15</td>
+            <td class="available" data-seat="F16">F16</td>
+            <td class="available" data-seat="F17">F17</td>
+            <td class="available" data-seat="F18">F18</td>
+            </tr>
+            <!-- Hàng G: Mỗi ô ghế được gộp thành 2 ghế thường, dùng colspan="2" -->
+        <tr>
+            <th>G</th>
+            <td class="couple" data-seat="G1" colspan="2">G1</td>
+            <td class="couple" data-seat="G2" colspan="2">G2</td>
+            <td class="couple" data-seat="G3" colspan="2">G3</td>
+            <td class="couple" data-seat="G4" colspan="2">G4</td>
+            <td class="couple" data-seat="G5" colspan="2">G5</td>
+            <td class="couple" data-seat="G6" colspan="2">G6</td>
+            <td class="couple" data-seat="G7" colspan="2">G7</td>
+            <td class="couple" data-seat="G8" colspan="2">G8</td>
+            <td class="couple" data-seat="G9" colspan="2">G9</td>
+        </tr>
+  
+            </tbody>
+          </table>
+    
+          <!-- Chú thích -->
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-box booked"></div>
+              <span>Ghế đã đặt</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-box"></div>
+              <span>Ghế trống</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-box selected"></div>
+              <span>Ghế đang chọn</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-box couple"></div>
+              <span>Ghế couple</span>
+            </div>
+          </div>
+                <!-- Nút tiếp tục -->
+        <div class="continue-container">
+            <button class="continue-button">Tiếp tục</button>
+        </div>
+        </div>
+
+    
+        <!-- Thông tin phim bên phải -->
+        <div class="movie-info">
+          <img src="assets/images/1.jpg" alt="Poster Nhà Gia Tiến (T18)">
+          <h3>Phim: NHÀ GIA TIẾN (T18)</h3>
+          <p><strong>Ngày:</strong> 27/02/2025</p>
+          <p><strong>Thời gian:</strong> 13:20 - 15:17</p>
+          <p><strong>Phòng:</strong> 02</p>
+          <p><strong>Vị trí ghế:</strong> D1</p>
+          <p><strong>Số ghế:</strong> 1</p>
+          <p><strong>Tổng tiền:</strong> 0 VNĐ</p>
+          <!-- Bạn có thể tính tổng tiền dựa trên số ghế chọn, ghế VIP,... qua JS -->
+        </div>
+      </div>
+  <!-- Phần Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Thông tin liên hệ -->
+      <div class="footer-contact">
+        <h3>Thông tin liên hệ</h3>
+        <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận XYZ, TP. HCM</p>
+        <p><strong>Điện thoại:</strong> 0123 456 789</p>
+        <p><strong>Email:</strong> support@example.com</p>
+      </div>
+      <!-- Bản đồ (Google Maps) -->
+      <div class="footer-map">
+        <h3>Bản đồ</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.823444389731!2d106.6781404153342!3d10.76262239233025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee24a12d4f9%3A0x6c2d2c62f8c5a6b9!2zVHLGsOG7nW5nIMSQw7RuZyBuZ2jhu4cgTmluaCBIw7RuZyBIb8Og!5e0!3m2!1svi!2s!4v1625077633673!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- Phương thức thanh toán -->
+      <div class="footer-payment">
+        <h3>Phương thức thanh toán</h3>
+        <a href="#"><img src="assets/images/payment-visa.png" alt="Visa"></a>
+        <a href="#"><img src="assets/images/payment-mastercard.png" alt="Mastercard"></a>
+        <a href="#"><img src="assets/images/payment-paypal.png" alt="PayPal"></a>
+      </div>
+      <!-- Phương thức đăng nhập -->
+      <div class="footer-login">
+        <h3>Phương thức đăng nhập</h3>
+        <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/google.png" alt="Google"></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Công ty của bạn. All rights reserved.</p>
+    </div>
+  </footer>    
+
+  <script href="assets/js/chon-ghe.js"></script>
+</body>
+</html>

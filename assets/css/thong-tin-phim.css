@@ -8,8 +8,8 @@
   
   /* Poster bên trái */
   .detail-poster {
-    width: 220px;        /* Chiều rộng poster tùy chỉnh */
-    height: 330px;       /* Chiều cao poster tùy chỉnh */
+    width: 300px;        /* Chiều rộng poster tùy chỉnh */
+    height: 400px;       /* Chiều cao poster tùy chỉnh */
     object-fit: cover;
     border-radius: 4px;
     border: 1px solid #ccc;
