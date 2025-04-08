@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>Phương Thức Thanh Toán</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/phuong-thuc-thanh-toan.css">
+
+    </head>
+<body>
+<header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav class="nav-center">
+          <a href="lich-chieu.html">Lịch Chiếu</a>
+          <a href="phim.html">Phim</a>
+          <a href="#">Ưu Đãi</a>
+          <a href="#">Tin Tức</a>
+          <a href="#">Thành Viên</a>
+          </nav>
+        <nav class="nav-right">
+            <a href="#" id="loginBtn">Đăng Nhập</a><br>
+            <a href="#" id="registerBtn">Đăng Ký</a>
+        </nav>
+      </header>
+
+      <div class="container">
+        <!-- Bill Section -->
+        <div class="bill-container">
+          <h2>Hóa Đơn</h2>
+          <table>
+            <tr>
+              <th>Tên Phim</th>
+              <td id="movieName">Nhà gia tiên </td>
+            </tr>
+            <tr>
+              <th>Ngày Giờ</th>
+              <td id="showDate">12/04/2025 19:00</td>
+            </tr>
+            <tr>
+                <th>Số ghế</th>
+                <td id="showDate">F1</td>
+            </tr>
+            <tr>
+                <th>Số vé </th>
+                <td id="showDate">1</td>
+            </tr>
+            <tr>
+              <th>Tổng Giá</th>
+              <td id="totalPrice">300,000 VND</td>
+            </tr>
+          </table>
+              <!-- Thông tin khách hàng -->
+    <h2>Thông tin khách hàng</h2>
+    <form id="customerForm">
+        <label for="fullName">Họ và Tên:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        
+        <label for="phoneNumber">Số điện thoại:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="invoiceCode">Mã Hóa Đơn:</label>
+        <input type="text" id="invoiceCode" name="invoiceCode" readonly>
+    </form>
+      
+          <!-- Payment Method Selection -->
+          <h3>Chọn Phương Thức Thanh Toán</h3>
+          <form id="paymentForm">
+            <label>
+              <input type="radio" name="payment" value="banking" checked> Thanh toán qua Internet Banking/VISA
+            </label>
+          </form>
+      
+          <button type="submit" id="submitBtn">Thanh Toán</button>
+        </div>
+      </div>
+  <!-- Phần Footer -->
+  <footer>
+    <div class="footer-container">
+      <!-- Thông tin liên hệ -->
+      <div class="footer-contact">
+        <h3>Thông tin liên hệ</h3>
+        <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận XYZ, TP. HCM</p>
+        <p><strong>Điện thoại:</strong> 0123 456 789</p>
+        <p><strong>Email:</strong> support@example.com</p>
+      </div>
+      <!-- Bản đồ (Google Maps) -->
+      <div class="footer-map">
+        <h3>Bản đồ</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.823444389731!2d106.6781404153342!3d10.76262239233025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ee24a12d4f9%3A0x6c2d2c62f8c5a6b9!2zVHLGsOG7nW5nIMSQw7RuZyBuZ2jhu4cgTmluaCBIw7RuZyBIb8Og!5e0!3m2!1svi!2s!4v1625077633673!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- Phương thức thanh toán -->
+      <div class="footer-payment">
+        <h3>Phương thức thanh toán</h3>
+        <a href="#"><img src="assets/images/payment-visa.png" alt="Visa"></a>
+        <a href="#"><img src="assets/images/payment-mastercard.png" alt="Mastercard"></a>
+        <a href="#"><img src="assets/images/payment-paypal.png" alt="PayPal"></a>
+      </div>
+      <!-- Phương thức đăng nhập -->
+      <div class="footer-login">
+        <h3>Phương thức đăng nhập</h3>
+        <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/images/google.png" alt="Google"></a>
+        <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Công ty của bạn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/phuong-thuc-thanh-toan.js"></script>
+</body>
+</html>
